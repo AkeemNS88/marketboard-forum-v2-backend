@@ -1,2 +1,0 @@
-Forum created using a guide online. The goal of this was to understand what goes in to creating a fully functioning discussion board.
-Marketboard V3 aimed to be a combination of what was learned moving through the guide for this forum and what I've done previously on "The Goods" Marketboard

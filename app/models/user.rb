@@ -17,4 +17,10 @@ class User < ApplicationRecord
                 numericality: { only_integer: true, less_than_or_equal_to: 3 }
     before_save { username.downcase! }
     before_save { email.downcase! }
+    
+    # Checks date validity of token
+    def password_token_expired?
+        offset = (Time.zone.now - password_reset_date).round
+        offset / 1.hours >= 1 # Token expires after 1 hour
+    end
 end
