@@ -8,7 +8,6 @@ class CommentsController < ApplicationController
     end
   
     def create
-      # user = User.find(params[:comment][:user_id])
       return if suspended(@current_user.can_comment_date)
   
       comment = @post.comments.build(comment_params)

@@ -1,0 +1,6 @@
+production:
+  cloud_name: dbom3n41m
+  api_key: <%= ENV['438587545964683'] %>
+  api_secret: <%= ENV['xiA54CLT4VRXjrUfcNs_2UFRRCQ'] %>
+  enhance_image_tag: true
+  static_file_support: true
